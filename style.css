@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #01041a;
+}
+.message {
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    animation: flash 2s linear infinite;
+    font-family:'Poppins';
+
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loader-div {
+    width: 30px;
+    height: 30px;
+    animation: bounce 1s 0.7s linear infinite;
+    border-radius: 100%;
+    margin: 10px;
+  }
+  
+  .circle1 {
+    background-color: rgb(211, 240, 27, 0.89 );
+  }
+  
+  .circle2 {
+    animation-delay: 0.2s;
+    background-color:rgb( 211, 240, 27, 0.89 );
+  }
+  
+  .circle3 {
+    animation-delay: 0.3s;
+    background-color: rgb(211, 240, 27, 0.89);
+  }
+  
+  @keyframes bounce {
+    0%, 50%, 100% {
+      transform: scale(1);
+      filter: blur(0px);
+    }
+    25% {
+      transform: scale(0.6);
+    }
+    75% {
+      transform: scale(1.4);
+    }
+  } 
+
+
+.starry-sky {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(white 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0);
+    background-size: 50px 50px, 100px 100px, 150px 150px, 200px 200px, 250px 250px,
+      300px 300px, 350px 350px, 400px 400px, 450px 450px, 500px 500px;
+    background-position: 0 0, 50px 50px, 100px 100px, 150px 150px, 200px 200px,
+      250px 250px, 300px 300px, 350px 350px, 400px 400px, 450px 450px;
+  }
+ 
+  .starry-sky {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(white 2%, transparent 0),
+      radial-gradient(rgb(255, 255, 255) 1%, transparent 0),
+      radial-gradient(rgb(255, 255, 255) 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0),
+      radial-gradient(white 1%, transparent 0),
+      radial-gradient(white 2%, transparent 0);
+    background-size: 50px 50px, 100px 100px, 150px 150px, 200px 200px, 250px 250px,
+      300px 300px, 350px 350px, 400px 400px, 450px 450px, 500px 500px;
+    background-position: 0 0, 50px 50px, 100px 100px, 150px 150px, 200px 200px,
+      250px 250px, 300px 300px, 350px 350px, 400px 400px, 450px 450px;
+    animation: flash 5s linear infinite;
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0.8;
+    }
+    20% {
+      opacity: 0.6;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    70% {
+      opacity: 0.4;
+    }
+    80% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
